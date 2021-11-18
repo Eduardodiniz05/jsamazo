@@ -14,7 +14,7 @@ export default {
         },
         {
             _id: '2',
-            name: 'Camisa de serviço com capuz nike',
+            name: 'Camisa  com capuz nike',
             category: 'Shirt',
             image: './images/product-2.jpg',
             price: 70,
@@ -25,7 +25,7 @@ export default {
         },
         {
             _id: '3',
-            name: 'Camiseta Adidas de manga longa e capuz',
+            name: 'Camiseta Adidas manga longa e capuz',
             category: 'Shirt',
             image: './images/product-3.jpg',
             price: 59,
@@ -36,7 +36,7 @@ export default {
         },
         {
             _id: '4',
-            name: 'Calça masculina esportiva de trico para corrida Under Armour',
+            name: 'Calça masculina esportiva em trico para corrida Under Armour',
             category: 'Pants',
             image: './images/product-4.jpg',
             price: 60,
