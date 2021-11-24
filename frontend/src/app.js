@@ -4,18 +4,18 @@ import { parseRequestUrl } from './utils.js';
 import Error404Screen from './screens/Error404Screen.js';
 
 const routes = {
-    "/": homeScreen,
-    "/product/:id": ProductScreen,
+    '/': homeScreen,
+    '/product/id:': ProductScreen,
 };
 
 const router = () => {
     const request = parseRequestUrl();
     const parseUrl = 
         (request.resource ? `/${request.resource}` : '/') +
-        (request.id? '/id:': '') + 
+        (request.id ? '/id:' :'') + 
         (request.verb ? `/${request.verb}`: '');
 
-    const screen = routes[parseUrl]? routes[parseUrl]: Error404Screen;
+    const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
     const main = document.getElementById('main-container');
     main.innerHTML = screen.render();
 };
